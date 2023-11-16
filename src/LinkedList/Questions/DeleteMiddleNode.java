@@ -1,5 +1,7 @@
 package LinkedList.Questions;
 
+import java.util.LinkedList;
+
 public class DeleteMiddleNode {
     public static  Node deleteMiddle(Node head) {
         if (head.next == null)
