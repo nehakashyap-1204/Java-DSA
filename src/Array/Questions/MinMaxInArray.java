@@ -2,7 +2,7 @@ package Array.Questions;
 
 public class MinMaxInArray {
     public static void main(String[] args) {
-        int[] arr = {4, 2, 0, -8, 20, 9, 2, 50};
+        int[] arr = {4, 2, 0, -8, 20, 9, 2, 50, 12};
         MinMax(arr);
     }
     public static void MinMax(int[] arr) {
