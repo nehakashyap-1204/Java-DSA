@@ -40,7 +40,6 @@ public class DFSpreorderTraversal {
             }
             if (temp.left != null) {
                 st.push(temp.left);
-
             }
         }
 

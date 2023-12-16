@@ -12,7 +12,7 @@ public class LevelOrderTraversal {
             this.val = val;
         }
     }
-    public static void nthLevel(Node root, int n) {
+    public static void nthLevel(Node root, int n) {  // left to right
         if (root == null) return;
         if (n == 1) {
             System.out.print(root.val+" ");
@@ -20,6 +20,15 @@ public class LevelOrderTraversal {
         }
         nthLevel(root.left, n-1);
         nthLevel(root.right, n-1);
+    }
+    public static void nthLevel2(Node root, int n) {
+        if (root == null) return;
+        if (n == 1) {
+            System.out.print(root.val+" ");
+            return;
+        }
+        nthLevel2(root.right, n-1);
+        nthLevel2(root.left, n-1);
     }
     public static int GetHeight(Node root){
         if (root == null) return 0;
@@ -58,5 +67,6 @@ public class LevelOrderTraversal {
 //            System.out.println();
 //        }
         bfs(root);
+//        nthLevel(root, 3);
     }
 }
