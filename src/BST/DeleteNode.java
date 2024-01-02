@@ -1,7 +1,7 @@
 package BST;
 
-import java.util.LinkedList;
-import java.util.Queue;
+    import java.util.LinkedList;
+    import java.util.Queue;
 
 public class DeleteNode {
     public static class Node{
@@ -22,7 +22,7 @@ public class DeleteNode {
         while (i < n-1) {
             Node temp = q.remove();
             Node left = new Node(10);
-            Node right = new Node(100);
+            Node right = new Node(10);
             if (arr[i].equals("")) {
                 left = null;
             } else {
@@ -86,11 +86,11 @@ public class DeleteNode {
     }
 
     public static void main(String[] args) {
-        String[] arr = {"50","20","60","17","34","55","89","10","","28","","","","70","","","14"};
+        String[] arr = {"5","3","6","2","4","","7"};
         Node root = constructBFS(arr);
         preOrder(root);
         System.out.println();
-        Node ans = deleteNode(root, 50);
+        Node ans = deleteNode(root, 3);
         preOrder(ans);
 
     }
