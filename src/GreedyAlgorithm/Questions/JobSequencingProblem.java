@@ -16,7 +16,7 @@ public class JobSequencingProblem {
         }
     }
     public static void main(String[] args) {
-        int[][] jobsInfo = {{4,20}, {1,10}, {1,40}, {1,30}};
+        int[][] jobsInfo = {{2,100}, {1,19}, {2,27}, {1,25}, {3,15}};
 
         ArrayList<Job> jobs = new ArrayList<>();
 
@@ -32,6 +32,7 @@ public class JobSequencingProblem {
             Job curr = jobs.get(i);
             if (curr.deadline > time) {
                 seq.add(curr.id);
+                System.out.println(curr.profit);
                 time++;
             }
         }
